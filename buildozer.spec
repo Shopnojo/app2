@@ -12,6 +12,7 @@ android.api = 35
 # Python 3.14 uses preadv/pwritev, available from Android API 24.
 android.minapi = 24
 android.archs = arm64-v8a
+p4a.branch = develop
 android.accept_sdk_license = True
 
 [buildozer]
