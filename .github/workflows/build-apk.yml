@@ -26,6 +26,27 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install Android build system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            autoconf \
+            automake \
+            build-essential \
+            cmake \
+            git \
+            libffi-dev \
+            libltdl-dev \
+            libtool \
+            libtool-bin \
+            libssl-dev \
+            libncurses5-dev \
+            libncursesw5-dev \
+            pkg-config \
+            zlib1g-dev \
+            zip \
+            unzip
+
       - name: Install Buildozer and Cython
         run: |
           python -m pip install --upgrade pip
